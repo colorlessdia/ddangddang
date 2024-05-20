@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      table {
+        border-collapse: collapse;
+        width: 70%;
+        text-align: center;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+      .user-profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .user-profile img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="2">메인 메뉴</th>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <div>
+            <span>{{user.MEM_NICK}}</span>
+            <img
+              src="{{user.MEM_IMG_PATH}}"
+              alt="프로필 사진"
+              style="height: 40px; border-radius: 50px"
+            />
+          </div>
+        </th>
+      </tr>
+
+      <tr>
+        <td><a href="/upload">매물등록</a></td>
+      </tr>
+      <tr>
+        <td><a href="/userupload">내 게시물 확인</a></td>
+      </tr>
+      <tr>
+        <td><a href="/sale">등록매물보기</a></td>
+      </tr>
+      <tr>
+        <td><a href="/login">로그인</a></td>
+      </tr>
+      <tr>
+        <td><a href="/kakao">카카오 로그인</a></td>
+      </tr>
+      <tr>
+        <td colspan="2"><hr /></td>
+      </tr>
+      <tr>
+        <td><a href="/kakao/logout">카카오 로그아웃</a></td>
+      </tr>
+      <tr>
+        <td><a href="/logout">로컬 로그아웃</a></td>
+      </tr>
+      <tr>
+        <td colspan="2"><a href="/join">회원가입</a></td>
+      </tr>
+    </table>
+  </body>
+</html>

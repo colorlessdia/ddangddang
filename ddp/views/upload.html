@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>이미지 업로드</td>
+            <td><input type="file" name="image" multiple/></td>
+        </tr>
+        <tr>
+            <td>매물 유형</td>
+            <td>
+                <select name="property_type" id="property_type">
+                    <option value="원룸">원룸</option>
+                    <option value="펜션">펜션</option>
+                    <option value="호텔">호텔</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>매물 이름</td>
+            <td><input type="text" name="property_name"/></td>
+        </tr>
+        <tr>
+            <td>매물 지역</td>
+            <td>
+                <select name="property_location" id="property_location">
+                    <option value="광주">광주</option>
+                    <option value="전남">전남</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>매물 주소</td>
+            <td><input type="text" name="property_address"/></td>
+        </tr>
+        <tr>
+            <td>매물 소개</td>
+            <td><input type="text" name="property_description"/></td>
+        </tr>
+        <tr>
+            <td>매물 층</td>
+            <td><input type="text" name="property_floor"/></td>
+        </tr>
+        <tr>
+            <td>보증금</td>
+            <td><input type="text" name="security_deposit"/></td>
+        </tr>
+        <tr>
+            <td>시작가</td>
+            <td><input type="text" name="starting_price"/></td>
+        </tr>
+        <tr>
+            <td>상한가</td>
+            <td><input type="text" name="maximum_price"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit">제출</button></td>
+        </tr>
+    </table>
+</form>
+
+
+
+
+
+
+
+    <div>
+        <!-- <img src="/mb_16856102731915061691545433722.jpg" style="height:300px; width:300px;" alt=""> -->
+    </div>
+    <!-- <div>
+        {%for item in row%}
+        <table>
+            <tr>
+              <td>
+                <img src="{{item.IMG_PATH}}" style="height: 300px; width: 300px;" alt="">
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td>{{item.PRD_TYPE}}</td>
+                  </tr>
+                  <tr>
+                    <td>{{item.PRD_NAME}}</td>
+                  </tr>
+                  <tr>
+                    <td>{{item.PRD_LOCA}}</td>
+                  </tr>
+                  <tr>
+                    <td>{{item.PRD_INTRO}}</td>
+                  </tr>
+                  <tr>
+                    <td>{{item.PRD_FLOOR}}</td>
+                  </tr>
+                  <tr>
+                    <td>{{item.MIN_FEE}}</td>
+                  </tr>
+                  <tr>
+                    <td>{{item.REG_DATE}}</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+        {%endfor%}
+
+    </div> -->
+    <script>
+
+
+    </script>
+</body>
+

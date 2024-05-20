@@ -1,0 +1,93 @@
+/* 기본으로 margin,padding,box-sizing 설정했다. 여백없음 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**/
+h2 {
+    margin-top: 20px;
+}
+
+/**/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/**/
+.login {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 500px;
+    border-radius: 50px;
+    /* 
+        background-image: url("./ka1.jpg");
+        background-size: cover; 
+        box-shadow: 2px 2px 2px 2px black; 
+        */
+
+}
+
+/* input 박스에 대한 css */
+input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    background: transparent;
+    /* 
+        border: none; 
+        */
+}
+
+/* 유효성 검사 시 숨겨진 값들 표시 */
+.hide {
+    visibility: hidden;
+    position: relative;
+    left: 50%;
+}
+
+/* 제출 버튼 : margin준 이유 => form과 떨어뜨리기 위해서 */
+#submit {
+    margin-bottom: 30px;
+}
+
+/*form의 id값이다. */
+.wrap {
+    width: 80%;
+}
+
+/* 보여지는 유효성검사 메세지 */
+.fontsize {
+    font-size: 13px;
+    position: absolute;
+}
+
+#asd {
+    display: flex;
+}
+
+
+#asd input {
+    display: inline-block;
+}
+
+
+/**/
+#sample6_extraAddress {
+    display: none;
+}
+
+
+#idPwInfoBox{
+    
+}
+

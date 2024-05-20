@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+/* reset */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root { font-size: 10px; --main-color: #00459b; --sub-color-1: #1677da; --acc-color: #ee5253; }
+body { font-family: 'Noto Sans KR', sans-serif; font-size: 1.5rem; color: #333; }
+ul li { list-style: none; }
+img { border: 0; }
+a { display: block; color: #333; text-decoration: none; }
+address { font-style: normal; }
+button,
+input[type=submit],
+input[type=reset],
+input[type=checkbox],
+label { border: 0; background: none; cursor: pointer; }
+
+::-webkit-scrollbar { width: 1rem; background: #e2e2e2; }
+::-webkit-scrollbar-thumb { background: #ccc; }
+
+.inner { position: relative; height: 100%; }
+.hide { overflow: hidden; position: absolute; left: -2000px; width: 1px; height: 1px; }
