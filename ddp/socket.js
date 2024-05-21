@@ -90,24 +90,5 @@ module.exports = (server) => {
     socket.on("reply", (data) => {
       console.log(data);
     });
-<<<<<<< HEAD
-=======
-
-    // 3초마다 클라이언트로 메시지 전송
-    socket.interval = setInterval(() => {
-      let sql = `    SELECT *
-                     FROM TB_AUCTION
-                     WHERE CUST_ID='김유열222';`;
-      conn.query(sql, [], (err, rows) => {
-        if (!err) {
-          console.log(rows);
-          socket.emit("news", rows);
-        } else {
-          console.log("DB명령이 제대로 실행되지 않았습니🥲🥲🥲🥲🥲");
-          console.log(err);
-        }
-      });
-    }, 10000);
->>>>>>> 98022b898a043c6a83522188e44ffe3c7c5e304f
   });
 };
